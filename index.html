@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сutaway</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-info">
+            <img src="img/IMG_9999.JPG" alt="photo" class="photo">
+            <div class="description">
+                <h1 class="name">Белова Юлия</h1>
+                <p class="description-info"><b>Адрес:</b> Челябинск</p>
+                <p class="description-info"><b>Опыт работы:</b> Нет</p>
+                <p class="description-info"><b>Телефон:</b> 8 (904)305 - 71 -33</p>
+
+                <h2 class="table-name">Знание языков</h2>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Java</th>
+                        <th>JavaSqript</th>
+                        <th>C++</th>
+                        <th>C#</th>
+                        <th>Php</th>
+                    </tr>
+                    <tr>
+                        <th>Отличное владение</th>
+                        <td>Нет</td>
+                        <td>Нет</td>
+                        <td>Нет</td>
+                        <td>Нет</td>
+                        <td>Нет</td>
+                    </tr>
+                    <tr>
+                        <th>Хорошее владение</th>
+                        <td>Нет</td>
+                        <td>Да</td>
+                        <td>Нет</td>
+                        <td>Да</td>
+                        <td>Нет</td>
+                    </tr>
+                    <tr>
+                        <th>Среднее владение</th>
+                        <td>Нет</td>
+                        <td>Да</td>
+                        <td>Нет</td>
+                        <td>Да</td>
+                        <td>Да</td>
+                    </tr>
+                    <tr>
+                        <th>Плохое владение</th>
+                        <td>Да</td>
+                        <td>Да</td>
+                        <td>Нет</td>
+                        <td>Да</td>
+                        <td>Да</td>
+                    </tr>
+                </table>
+            </div>
+            <form>
+                <label for="phone">Телефон</label><br>
+                <input type="text" name="phone" placeholder="+7 (999) 99 - 99 - 99"><br>
+                <label for="name">Имя</label><br>
+                <input type="text" name="name" placeholder="Александр"><br>
+                <a href="#" id="link" class="click clearfix" onclick="viewDiv()">Кликните сюда, чтобы узнать меня подробнее</a>
+            </form>
+        </div>
+        <div id="hidden-block" value=1 class="hidden-info">
+            <p>
+                Доброго времени суток! <br>
+                Меня зовут Юлия, и здесь я хотела бы немного рассказать о себе. Я – ученица четвёртого курса Челябинского Государственного университета по специальности «Бизнес – информатика».
+            </p>
+            <p>
+                Таким направлением, как WEB – разработка я начала интересоваться несколько месяцев назад, стараясь самостоятельно обучиться основам HTML и CSS. Определенных успехов удалось достичь, но что-то так и осталось не постигнутым (например, адаптивная вёрстка пока что не радует. Собственно, данный сайт это отлично демонстрирует). И, тем не менее, это только разжигает желание исправить этот досадный факт.
+            </p>
+            <p>
+                Помимо языка разметки и каскадной таблицы стилей, удалось базово освоить такие языки, как PHP и JavaSqript. С помощью них был реализован первый проект в рамах курсовой работы.
+            </p>
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function viewDiv() {
+            if (document.getElementById("hidden-block").value == 1) {
+                document.getElementById("hidden-block").style.display = "block";
+                document.getElementById("hidden-block").value = 0;
+            } else {
+                document.getElementById("hidden-block").style.display = "none";
+                document.getElementById("hidden-block").value = 1;
+            }
+        };
+    </script>
+</body></html>
